@@ -1,4 +1,49 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: black;
+
+}
+
+
+footer {
+	display: flex;
+	flex-direction: column;
+	width:55%;
+	margin: 0 auto;
+}
+
+footer article {
+	text-transform: uppercase;
+}
+
+
+footer img {
+	width: 4%;
+	margin: 3rem auto 3rem auto;
+
+}
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+
+footer div:last-of-type {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rem;
+	border-top: 1px solid grey;
+	padding-top: 1rem;
+	color: grey;
+}
+
+footer p {
+	color:grey;
+}
+
+
+.fa {
+	font-size: 2rem;
 }

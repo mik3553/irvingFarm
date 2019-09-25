@@ -1,11 +1,16 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: black;
-	margin: 0;
-	padding: 0;
 }
 
 /* Style Header par Julie */
+
+#headerContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 /* 1er image avec bouton */
 #headerContainer #intro{
@@ -58,7 +63,8 @@ body{
 /* 2eme barre de Nav */
 
 #headerContainer #nav02{
-	width: 100%;
+	margin: 0 auto;
+	width: 55%;
 	height: 150px;
 	display: flex;
 	justify-content: center;

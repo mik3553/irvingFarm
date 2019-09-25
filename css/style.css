@@ -1,4 +1,80 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/* Style Header par Julie */
+
+/* 1er image avec bouton */
+#headerContainer #intro{
+	width: 100%;
+	height: 700px;
+	background: url("../images/home_main_desktop.jpg") center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#headerContainer #intro h1{
+	background: white;
+	font-size: 15px;
+	letter-spacing: 0.2rem;
+	padding: 15px 30px;
+}
+
+#headerContainer #intro i{
+	color: white;
+	font-size: 30px;
+}
+
+/* 1ere barre de Nav */
+
+#headerContainer #nav01{
+	width: 100%;
+	height: 50px;
+	background: #030708;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#headerContainer #nav01 #Free{
+	margin: 0;
+	color: white;
+	font-size: 10px;
+}
+
+#headerContainer #nav01 #accountCart a{
+	margin: 0;
+	text-decoration: none;
+	color: white;
+	font-size: 10px;
+}
+
+/* 2eme barre de Nav */
+
+#headerContainer #nav02{
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#headerContainer #nav02 a{
+	margin: 0;
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	padding: 10px 20px;
+}
+
+#headerContainer #nav02 img{
+	width: 170px;
+	align-self: flex-start;
+	margin: 10px 50px;
 }

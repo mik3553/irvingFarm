@@ -12,6 +12,12 @@ body{
 	align-items: center;
 }
 
+/* Barre de Nav Mobile */
+
+#headerContainer #navMobile{
+	display: none;
+}
+
 /* 1er image avec bouton */
 #headerContainer #intro{
 	width: 100%;
@@ -29,11 +35,13 @@ body{
 	font-size: 15px;
 	letter-spacing: 0.2rem;
 	padding: 15px 30px;
+	transition: 0.7s;
 }
 
 #headerContainer #intro i{
 	color: white;
 	font-size: 30px;
+	transition: 0.7s;
 }
 
 /* 1ere barre de Nav */
@@ -83,4 +91,74 @@ body{
 	width: 170px;
 	align-self: flex-start;
 	margin: 10px 50px;
+}
+
+/* Responsive Header par Julie */
+
+@media screen and (max-width: 400px){
+
+	/* Barre de Nav Mobile */
+
+	#headerContainer #navMobile{
+		width: 100%;
+		height: 150px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+
+	#headerContainer #navMobile img{
+		width: 40%;
+	}
+
+	#headerContainer #navMobile i{
+		font-size: 30px;
+		margin: 0 20px;
+	}
+	
+	/* 1er image avec bouton */
+	#headerContainer #intro{
+		background: url("../images/home_main_mobile.jpg") center no-repeat;
+		background-size: cover;
+	}
+
+	#headerContainer #intro h1{
+		transition: none;
+	}
+	
+	#headerContainer #intro i{
+		transition: none;
+	}
+
+	/* Hover bouton et chevron */
+
+
+
+	/* 1ere barre de Nav */
+
+	#headerContainer #nav01{
+		justify-content: center;
+	}
+
+	#headerContainer #nav01 #accountCart a{
+		display: none;
+	}
+	
+	/* 2eme barre de Nav */
+	
+	#headerContainer #nav02{
+		display: none;
+	}
+}
+
+/* Hover sur le bouton et le chevron */
+
+@media screen and (min-width: 500px){
+	#headerContainer #intro h1:hover{
+		opacity: 0.6;
+	}
+
+	#headerContainer #intro i:hover{
+		opacity: 0.6;
+	}	
 }

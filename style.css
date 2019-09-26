@@ -1,0 +1,78 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* CI-DESSOUS SE TROUVE MA SECTION + IMAGE */
+
+#home{
+	width: 55%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;	
+	padding: 5%;
+	margin: 0 auto;
+}
+
+.image{ 
+	display: flex;
+	width: 400px;
+	height: 300px;	
+}
+
+.texte{
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 300px;	
+	border-top: 3.5px solid black;
+	border-bottom: 3.5px solid black;
+	align-items: center;
+}
+
+
+/*CI-DESSOUS SE TROUVE MON FOOTER */
+
+#footer{
+	width: 100%;
+	height: 5em;
+	background: lightgrey;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-footer{
+	display: flex;
+	width: 55%;
+	justify-content: space-around;	
+	margin: auto;
+}
+
+.box-email{
+	display: flex;
+	align-content: center;
+	width: 63%;
+	padding-top: 12.5px;
+}
+
+legend{
+	display: flex;
+	align-items: center;
+	background: black;
+	color: white;
+}
+
+@media screen and (max-width: 400px){
+
+	#home {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.box-footer{
+		display: flex;
+		flex-direction: column;
+	}
+}
+

@@ -93,74 +93,138 @@ body{
 	margin: 10px 50px;
 }
 
-/* Responsive Header par Julie */
+	
 
-@media screen and (max-width: 400px){
-
-	/* Barre de Nav Mobile */
-
-	#headerContainer #navMobile{
-		width: 100%;
-		height: 150px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+footer {
+	display: flex;
+	flex-direction: column;
+	width:55%;
+	margin: 0 auto;
+	
 }
 
-	#headerContainer #navMobile img{
-		width: 40%;
-	}
-
-	#headerContainer #navMobile i{
-		font-size: 30px;
-		margin: 0 20px;
-	}
-	
-	/* 1er image avec bouton */
-	#headerContainer #intro{
-		background: url("../images/home_main_mobile.jpg") center no-repeat;
-		background-size: cover;
-	}
-
-	#headerContainer #intro h1{
-		transition: none;
-	}
-	
-	#headerContainer #intro i{
-		transition: none;
-	}
-
-	/* Hover bouton et chevron */
-
-
-
-	/* 1ere barre de Nav */
-
-	#headerContainer #nav01{
-		justify-content: center;
-	}
-
-	#headerContainer #nav01 #accountCart a{
-		display: none;
-	}
-	
-	/* 2eme barre de Nav */
-	
-	#headerContainer #nav02{
-		display: none;
-	}
+.sprite {
+	margin: 2rem auto;
+	width: calc(1010px / 9);
+	height: 116px;
+	background: url(../images/oiseau.png);
+	animation: animate 1s steps(9) infinite;
+}
+@keyframes animate {
+	from { background-position: 0 ;}
+	to   { background-position: 1010px ;}
 }
 
-/* Hover sur le bouton et le chevron */
 
-@media screen and (min-width: 500px){
-	#headerContainer #intro h1:hover{
-		opacity: 0.6;
-		transform: scale(1.2);
+footer article {
+	text-transform: uppercase;
+}
+
+
+footer img {
+	width: 35rem;
+	margin: 3rem auto 3rem auto;
+}
+
+
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer div:last-of-type {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rem;
+	border-top: 1px solid grey;
+	padding-top: 1rem;
+	color: grey;
+}
+
+footer p {
+	color:grey;
+}
+
+
+footer .fa {
+	font-size: 2.5rem;
+}
+
+@media screen and (max-width: 400px) {
+	/* Responsive Header par Julie */
+
+		/* Barre de Nav Mobile */
+
+		#headerContainer #navMobile{
+			width: 100%;
+			height: 150px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+	}
+	
+		#headerContainer #navMobile img{
+			width: 40%;
+		}
+	
+		#headerContainer #navMobile i{
+			font-size: 30px;
+			margin: 0 20px;
+		}
+		
+		/* 1er image avec bouton */
+		#headerContainer #intro{
+			background: url("../images/home_main_mobile.jpg") center no-repeat;
+			background-size: cover;
+		}
+	
+		#headerContainer #intro h1{
+			transition: none;
+		}
+		
+		#headerContainer #intro i{
+			transition: none;
+		}
+	
+		/* 1ere barre de Nav */
+	
+		#headerContainer #nav01{
+			justify-content: center;
+		}
+	
+		#headerContainer #nav01 #accountCart a{
+			display: none;
+		}
+		
+		/* 2eme barre de Nav */
+		
+		#headerContainer #nav02{
+			display: none;
+		}
+	}
+	
+	/* Hover sur le bouton et le chevron */
+	
+	@media screen and (min-width: 500px){
+		#headerContainer #intro h1:hover{
+			opacity: 0.6;
+			transform: scale(1.2);
+		}
+	
+		#headerContainer #intro i:hover{
+			opacity: 0.6;
+			transform: scale(1.2);
+		}
+
+	footer div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	}
 
-	#headerContainer #intro i:hover{
-		opacity: 0.6;
-		transform: scale(1.2);
-	}	
+	footer article {
+		width: 45%;
+	}
+
 }

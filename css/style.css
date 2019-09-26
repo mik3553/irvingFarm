@@ -1,7 +1,8 @@
-body{
+body {
 	font-family: 'Open Sans', sans-serif;
 	color: black;
 }
+/* MAIN Loïs */
 main {
 	display: flex;
 	flex-direction: column;
@@ -95,6 +96,7 @@ main .deuxiemeSection i {
 /* RESPONSIVE */
   
 @media screen and (max-width: 400px) {
+	/* SECTION 1 reponsive */
 	main .premiereSection {
 		background: white;
 		height: auto;
@@ -124,7 +126,7 @@ main .deuxiemeSection i {
 		margin-top: 5%;
 		margin-bottom: 5%;
 	}
-	/* DEUXIEME SECTION  */
+	/* DEUXIEME SECTION responsive */
 	main .deuxiemeSection {
 		height: auto;
 		background: rgb(233, 233, 233);
@@ -157,5 +159,67 @@ main .deuxiemeSection i {
 	main .deuxiemeSection .containerPhoto article p {
 		font-size: 10px;
 		text-align: center;
+	}
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	width:55%;
+	margin: 0 auto;
+}
+
+.sprite {
+	margin: 2rem auto;
+	width: calc(1010px / 9);
+	height: 116px;
+	background: url(../images/oiseau.png);
+	animation: animate 1s steps(9) infinite;
+}
+@keyframes animate {
+	from { background-position: 0 ;}
+	to   { background-position: 1010px ;}
+}
+
+footer article {
+	text-transform: uppercase;
+}
+
+footer img {
+	width: 35rem;
+	margin: 3rem auto 3rem auto;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer div:last-of-type {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rem;
+	border-top: 1px solid grey;
+	padding-top: 1rem;
+	color: grey;
+}
+
+footer p {
+	color:grey;
+}
+
+footer .fa {
+	font-size: 2.5rem;
+}
+
+@media screen and (max-width: 400px) {
+
+	footer div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	}
+
+	footer article {
+		width: 45%;
 	}
 }

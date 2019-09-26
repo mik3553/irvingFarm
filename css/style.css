@@ -1,7 +1,6 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: black;
-
 }
 
 
@@ -10,7 +9,21 @@ footer {
 	flex-direction: column;
 	width:55%;
 	margin: 0 auto;
+	
 }
+
+.sprite {
+	margin: 2rem auto;
+	width: calc(1010px / 9);
+	height: 116px;
+	background: url(../images/oiseau.png);
+	animation: animate 1s steps(9) infinite;
+}
+@keyframes animate {
+	from { background-position: 0 ;}
+	to   { background-position: 1010px ;}
+}
+
 
 footer article {
 	text-transform: uppercase;
@@ -18,16 +31,15 @@ footer article {
 
 
 footer img {
-	width: 4%;
+	width: 35rem;
 	margin: 3rem auto 3rem auto;
-
 }
+
+
 
 footer div {
 	display: flex;
 	justify-content: space-between;
-	
-
 }
 
 footer div:last-of-type {
@@ -44,6 +56,22 @@ footer p {
 }
 
 
-.fa {
-	font-size: 2rem;
+footer .fa {
+	font-size: 2.5rem;
+}
+
+@media screen and (max-width: 400px) {
+
+	footer div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	}
+
+	footer article {
+		width: 45%;
+	}
+
+
+
 }

@@ -201,8 +201,11 @@ footer {
 	to   { background-position: 1010px ;}
 }
 
-footer article {
+footer ul {
 	text-transform: uppercase;
+}
+footer ul li {
+	list-style-type: none;
 }
 
 footer img {
